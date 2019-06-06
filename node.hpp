@@ -68,7 +68,7 @@ class Node
             };
             struct
             {
-                Point **val; //Dynamic array of point pointers.
+                Point **val;
                 int len;
             };
         };

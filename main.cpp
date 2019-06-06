@@ -37,22 +37,6 @@ int main(){
     printInfo(prquadtree.find(&a));
     printInfo(prquadtree.find(&c));
     printInfo(prquadtree.find(&d));
-    
-    // cout << "prquadtree" << endl;
-
-    // cout << "Get point at coordinate" << endl;
-    // cout << "------d-----" <<  endl;
-
-
-    // Node * teste = prquadtree.find(&c);
-    // cout << "sadsa : " << teste->getDepth() << endl;
-
-    // Node * as = prquadtree.find(&e);
-    // cout << "sadsa : " << as->getDepth() << endl;
-
-    // cout << "Busca em região" << endl;
-    // cout << "------d-----" <<  endl;
-
 
     return 0;
 }

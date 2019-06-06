@@ -6,13 +6,11 @@ PRQuadtree::PRQuadtree(float left, float width, float down, float height, int ma
 :   maxDepth(maxDepth), root(new Node(left, width, down, height))
 {}
 
-PRQuadtree::~PRQuadtree()
-{
+PRQuadtree::~PRQuadtree(){
     delete root;
 }
 
-void PRQuadtree::insert(Point *point)
-{
+void PRQuadtree::insert(Point *point){
     Node *nodeTemp = getLeafAt(point->getX(), point->getY());
 
     nodeTemp->addValue(point);
@@ -59,8 +57,7 @@ Node *PRQuadtree::find(Point *point) const {
     return 0; 
 }
 
-Node *PRQuadtree::getLeafAt(float x, float y) const
-{
+Node *PRQuadtree::getLeafAt(float x, float y) const{
     Node *nodeTemp = root;
  
     while (nodeTemp->hasChildren()){
